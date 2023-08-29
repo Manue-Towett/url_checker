@@ -1,0 +1,5 @@
+URLChecker:INFO - *****URLChecker started*****
+URLChecker:INFO - Reading input file >>> Example Check URLs File.xlsx
+URLChecker:INFO - Non duplicates: 99 || Duplicates: 28
+URLChecker:INFO - Savig results obtained to excel...
+URLChecker:INFO - Data saved to results_2023-08-29.xlsx

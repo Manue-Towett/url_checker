@@ -1,6 +1,5 @@
 import os
 import configparser
-from typing import Optional
 from datetime import date
 from urllib.parse import urlparse
 

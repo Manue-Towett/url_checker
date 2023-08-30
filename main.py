@@ -90,14 +90,16 @@ class URLChecker:
         self.__remove_duplicates(urls)
 
         for url in urls:
-            if not url in self.crawled:
-                domain = urlparse(url).netloc
+            domain = urlparse(url).netloc
 
+            if not domain in self.crawled:  
                 count = self.__count_urls_per_domain(domain)
 
-                self.results.append({"URL": url, "Results Found": count})
+                main_url = "/".join(url.split("/")[:3]) + "/"
 
-                self.crawled.append(url)
+                self.results.append({"URL": main_url, "Results Found": count})
+
+                self.crawled.append(domain)
 
         self.__save_to_excel()
     
